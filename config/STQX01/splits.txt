@@ -7,15 +7,15 @@ Sections:
 	.dtors      type:rodata
 	.rodata     type:rodata
 	.data       type:data
-    .sdata      type:data
+	.sdata      type:data
 	.sbss       type:bss
 	.sdata2     type:rodata
 	.sbss2      type:bss
-    .bss        type:bss
+	.bss        type:bss
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x801F4BAC end:0x801F4C1C
 	.ctors      start:0x80346540 end:0x80346544 rename:.ctors$10
-    .dtors      start:0x80346600 end:0x80346604 rename:.dtors$10
+	.dtors      start:0x80346600 end:0x80346604 rename:.dtors$10
 	.dtors      start:0x80346604 end:0x80346608 rename:.dtors$15
 	.sdata      start:0x803E9138 end:0x803E9140

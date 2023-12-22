@@ -16,6 +16,6 @@ Sections:
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x801E2ECC end:0x801E2F3C
 	.ctors      start:0x8033EB80 end:0x8033EB84 rename:.ctors$10
-    .dtors      start:0x8033EC40 end:0x8033EC44 rename:.dtors$10
+	.dtors      start:0x8033EC40 end:0x8033EC44 rename:.dtors$10
 	.dtors      start:0x8033EC44 end:0x8033EC48 rename:.dtors$15
 	.sdata      start:0x806BF650 end:0x806BF658
