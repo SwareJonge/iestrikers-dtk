@@ -1,0 +1,6 @@
+object: orig/S5SJHF/main.dol
+hash: 20ee8cdb91887d98efb309237d9232567226a775
+symbols: config/S5SJHF/symbols.txt
+splits: config/S5SJHF/splits.txt
+symbols_known: true
+mw_comment_version: 8

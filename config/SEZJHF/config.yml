@@ -1,0 +1,6 @@
+object: orig/SEZJHF/main.dol
+hash: b1ef663a87ced531911429f68f36adfb9f6342a6
+symbols: config/SEZJHF/symbols.txt
+splits: config/SEZJHF/splits.txt
+symbols_known: true
+mw_comment_version: 8

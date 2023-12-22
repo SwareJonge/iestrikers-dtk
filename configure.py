@@ -27,7 +27,11 @@ from tools.project import (
 # Game versions
 DEFAULT_VERSION = 0
 VERSIONS = [
-    "GAMEID",	# 0
+    "STQJHF",	# 0, JP Strikers
+    "SEZJHF",	# 1, Strikers 2012
+    "STQP01",	# 2, EU Strikers ENG FRA GER
+    "STQX01",	# 3, EU Strikers ENG ITA SPA
+    "S5SJHF"    # 4, GO Strikers 2013
 ]
 
 if len(VERSIONS) > 1:
@@ -150,7 +154,7 @@ cflags_base = [
     "-RTTI off",
     "-fp_contract on",
     "-str reuse",
-	"-multibyte", # For Wii compilers, replace with `-enc SJIS`
+	"-enc SJIS",
     "-i include",
     f"-i build/{config.version}/include",
     f"-DVERSION={version_num}",
@@ -179,14 +183,14 @@ cflags_rel = [
     "-sdata2 0",
 ]
 
-config.linker_version = "GC/1.3.2"
+config.linker_version = "Wii/1.7"
 
 
 # Helper function for Dolphin libraries
-def DolphinLib(lib_name, objects):
+def RVLLib(lib_name, objects):
     return {
         "lib": lib_name,
-        "mw_version": "GC/1.2.5n",
+        "mw_version": "Wii/1.1",
         "cflags": cflags_base,
         "host": False,
         "objects": objects,

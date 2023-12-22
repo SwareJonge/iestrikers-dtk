@@ -1,0 +1,6 @@
+object: orig/STQJHF/main.dol
+hash: 8d490858cb41b76a34cf70df6471d8fff92a2e16
+symbols: config/STQJHF/symbols.txt
+splits: config/STQJHF/splits.txt
+symbols_known: true
+mw_comment_version: 8

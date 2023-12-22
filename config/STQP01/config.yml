@@ -1,0 +1,6 @@
+object: orig/STQP01/main.dol
+hash: 3115cc640c600213e9903e91fddb5c5564fa1925
+symbols: config/STQP01/symbols.txt
+splits: config/STQP01/splits.txt
+symbols_known: true
+mw_comment_version: 8
