@@ -185,17 +185,69 @@ cflags_rel = [
 
 config.linker_version = "Wii/1.7"
 
+# Helper function for RevoEX libraries
+def RevoEXLib(lib_name, objects):
+    return {
+        "lib": lib_name,
+        "mw_version": "GC/3.0a5.2", 
+        "cflags": cflags_base,
+        "host": False,
+        "objects": objects,
+}
 
-# Helper function for Dolphin libraries
+# Helper function for RVL libraries
 def RVLLib(lib_name, objects):
     return {
         "lib": lib_name,
-        "mw_version": "Wii/1.1",
+        "mw_version": "Wii/1.0",
         "cflags": cflags_base,
         "host": False,
         "objects": objects,
     }
 
+# Helper function for RVL libraries
+def RVLLib(lib_name, objects):
+    return {
+        "lib": lib_name,
+        "mw_version": "Wii/1.0",
+        "cflags": cflags_base,
+        "host": False,
+        "objects": objects,
+    }
+
+nw4r_mw_version = "Wii/1.1"
+if(version_num < 2): # Only JP Strikers and Strikers 2012 use Wii 1.0 for NW4R
+    nw4r_mw_version = "Wii/1.0"
+
+# Helper function for NW4R libraries
+def NW4RLib(lib_name, objects):
+    return {
+        "lib": lib_name,
+        "mw_version": nw4r_mw_version, 
+        "cflags": cflags_base,
+        "host": False,
+        "objects": objects,
+}
+
+# Helper function for Mobiclip libraries
+def MobiClipLib(lib_name, objects):
+    return {
+        "lib": lib_name,
+        "mw_version": "Wii/1.5", 
+        "cflags": cflags_base,
+        "host": False,
+        "objects": objects,
+}
+
+# Helper function for dwc libraries
+def DWCLib(lib_name, objects):
+    return {
+        "lib": lib_name,
+        "mw_version": "Wii/1.6", 
+        "cflags": cflags_base,
+        "host": False,
+        "objects": objects,
+}
 
 # Helper function for REL script objects
 def Rel(lib_name, objects):
@@ -206,7 +258,6 @@ def Rel(lib_name, objects):
         "host": True,
         "objects": objects,
     }
-
 
 Matching = True
 NonMatching = False
